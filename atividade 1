@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStay - Formulários</title>
+</head>
+<body>
+
+    <h1>TechStay - Formulários</h1>
+    <hr>
+
+    <h2>Formulário do Cliente</h2>
+    
+    <form action="http://127.0.0.1:5500/pagina2.html">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+
+            <label for="cnome">Nome completo:</label><br/>
+            <input type="text" id="cnome" name="cnome" required><br/><br/>
+
+            <label for="email">E-mail:</label><br/>
+            <input type="email" id="email" name="email" required><br/><br/>
+
+            <label for="numero">Número:</label><br/>
+            <input type="tel" id="numero" name="numero" placeholder="(00) 00000-0000" required><br/><br/>
+
+            <label for="datanascimento">Data de nascimento:</label><br/>
+            <input type="date" id="datanascimento" name="datanascimento" required><br/><br/>
+
+        </fieldset>
+
+        <br/>
+
+        <fieldset>
+            <legend>Termos</legend>
+            <input type="checkbox" id="termos" name="termos" required>
+            <label for="termos">Aceito os termos</label><br/>
+        </fieldset>
+
+        <br/>
+
+        <input type="submit" value="Enviar"><br/>
+
+    </form>
+
+</body>
+</html>
