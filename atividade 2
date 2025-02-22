@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStay - Formulários</title>
+</head>
+<body>
+
+    <h1>TechStay - Formulários</h1><br/>
+    <hr>
+
+    <h2>Formulário de Reserva</h2>
+
+    <form action="http://127.0.0.1:5500/pagina3.html">
+
+        <fieldset>
+            <legend>Detalhes da Reserva</legend>
+
+            <label for="datareserva">Data da reserva:</label><br/>
+            <input type="date" id="datareserva" name="datareserva" min="2025-02-21" required><br/><br/>
+
+            <label for="inicio">Horário de início:</label><br/>
+            <input type="time" id="inicio" name="inicio" required><br/><br/>
+
+            <label for="termino">Horário de término:</label><br/>
+            <input type="time" id="termino" name="termino" required><br/><br/>
+
+        </fieldset>
+
+        <br/>
+
+        <fieldset>
+            <legend>Tipo de Sala</legend>
+
+            <label for="sala1">Reunião</label>
+            <input type="radio" id="sala1" name="sala" value="1" required><br/><br/>
+
+            <label for="sala2">Treinamento</label>
+            <input type="radio" id="sala2" name="sala" value="2" required><br/><br/>
+
+            <label for="sala3">Individual</label>
+            <input type="radio" id="sala3" name="sala" value="3" required><br/><br/>
+
+        </fieldset>
+
+        <br/>
+
+        <fieldset>
+            <legend>Participantes</legend>
+            <label for="participantes">Número de participantes:</label><br/>
+            <input type="number" id="participantes" name="participantes" min="1" required><br/>
+        </fieldset>
+
+        <br/>
+
+        <input type="submit" value="Reservar"><br/>
+
+    </form>
+
+</body>
+</html>
